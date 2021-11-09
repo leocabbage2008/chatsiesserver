@@ -15,6 +15,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 db();
 
-app.use('/users', usersRouter);
+app.use('/messages', usersRouter);
 
 module.exports = app;

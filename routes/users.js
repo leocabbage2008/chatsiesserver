@@ -3,7 +3,7 @@ var router = express.Router();
 var Message = require('../models/Message/Message');
 
 router.post('/', function (req, res) {
-  const { name, message } = req.query;
+  const { name, message } = req.body;
   if (!name || !message) {
     res.json({ message: 'YOU KNOW WHAT YOU DID' });
   }
